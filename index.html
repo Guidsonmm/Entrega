@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beholder - Aplicação Web para monitoramento de servidores e computadores</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- CSS da página de login -->
+    <link rel="stylesheet" href="css/style.login.css">
+</head>
+
+<body>
+    <!-- Navbar do topo-->
+    <nav class="navbar bg-primary shadow">
+        <!-- Container da navbar-->
+        <div class="container">
+            <!-- Logo da navbar-->
+            <a class="navbar-brand" href="#">
+                <!-- Imagem da logo-->
+                <img src="/img/Logo Final PNG2.png" alt="" class="img-fluid navbar-brand" style="max-width: 100px" />
+                <!-- Texto da logo-->
+                <span class="fw-bold text-white ">BeHolder - Hardware Analysis</span>
+            </a>
+
+            <!-- Botões de login e cadastro-->
+            <div class="d-flex">
+                <!-- Botão de login que abre um offcanvas de login-->
+                <button class="btn btn-outline-dark me-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#loginOffcanvas" aria-controls="loginOffcanvas">Login</button>
+                <!-- Botão de cadastro que abre uma página de cadastro-->
+                <a href="new-cadastro.html" class="btn btn-outline-dark">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container principal-->
+    <div class="container my-5">
+
+        <!-- Imagem e Texto Informativo (1)-->
+        <div class="d-flex flex-row align-items-center align-content-center">
+            <!-- Imagem-->
+            <div class="col-md-4">
+                <img src="/img/data1.jpg" alt="" class="img-fluid" />
+            </div>
+            <!-- Texto-->
+            <div class="col-md-7 mx-auto">
+                <!-- Card, cor do background: bg-info-subtle-->
+                <div class="card shadow border-0 bg-info-subtle">
+                    <!-- Corpo do card-->
+                    <div class="card-body">
+                        <p class="lead">
+                            O monitoramento de servidores em um data center é uma prática
+                            crucial para garantir a confiabilidade e o desempenho de um
+                            ambiente de TI. Uma forma comum de monitoramento é por meio de
+                            gráficos, que permitem visualizar informações em tempo real sobre
+                            o desempenho do sistema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagem e Texto Informativo (2)-->
+        <div class="d-flex flex-row align-items-center align-content-center mt-5">
+            <!-- Texto-->
+            <div class="col-md-7 mx-auto">
+                <div class="card shadow border-0 bg-info-subtle w-100">
+                    <div class="card-body">
+                        <p class="lead">
+                            Os gráficos são úteis para identificar tendências e anomalias no
+                            desempenho do servidor. Por exemplo, um aumento repentino no uso
+                            de CPU pode indicar um problema de processamento, enquanto uma
+                            diminuição no tráfego de rede pode indicar um problema de
+                            conectividade. Com os gráficos, os administradores de sistemas
+                            podem rapidamente detectar e resolver problemas antes que eles
+                            afetem os usuários finais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagem-->
+            <div class="col-md-4">
+                <img src="/img/data2.jpg" alt="" class="img-fluid" />
+            </div>
+        </div>
+
+        <!-- Imagem e Texto Informativo (3)-->
+        <div class="d-flex flex-row align-items-center align-content-center mt-5">
+            <!-- Imagem-->
+            <div class="col-md-4">
+                <img src="/img/data1.jpg" alt="" class="img-fluid" />
+            </div>
+            <!-- Texto-->
+            <div class="col-md-7 mx-auto">
+                <!-- Card, cor do background: bg-info-subtle-->
+                <div class="card shadow border-0 bg-info-subtle">
+                    <!-- Corpo do card-->
+                    <div class="card-body">
+                        <p class="lead">
+                            Além disso, os gráficos podem ser úteis para fins de planejamento,
+                            permitindo que os administradores visualizem a utilização do
+                            servidor ao longo do tempo e planejem melhorias ou atualizações de
+                            acordo com a demanda.
+                        </p>
+
+                        <p class="lead">
+                            Em resumo, o monitoramento de servidores em data center com
+                            gráficos é uma técnica importante para garantir a disponibilidade
+                            e o desempenho do sistema de TI. Os gráficos fornecem informações
+                            em tempo real sobre métricas críticas, permitindo que os
+                            administradores tomem medidas preventivas e corretivas para manter
+                            o ambiente de TI funcionando de maneira eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas de login-->
+        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="loginOffcanvas"
+            aria-labelledby="loginOffcanvasLabel">
+            <!-- Cabeçalho do offcanvas-->
+            <div class="offcanvas-header bg-primary">
+                <h5 class="offcanvas-title text-white fw-bold" id="staticBackdropLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Corpo do offcanvas-->
+            <div class="offcanvas-body mt-5">
+                <!-- Formulário de login com validação, todos os campos são obrigatórios-->
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <!-- Label do campo de usuário-->
+                        <label for="usuario" class="fw-bold">Nome do Usuário</label>
+                        <!-- Campo de usuário-->
+                        <input type="text" class="form-control mt-1" id="usuario" placeholder="Digite o seu nome"
+                            name="usuario" required>
+
+                        <!-- Mensagem de erro -->
+                        <div class="invalid-feedback">
+                            Por favor, digite o seu nome de usuário.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <!-- Label do campo de senha-->
+                        <label for="senha" class="fw-bold">Senha</label>
+                        <!-- Campo de senha-->
+                        <input type="password" class="form-control mt-1" id="senha" placeholder="Digite a sua senha"
+                            name="senha" required>
+
+                        <!-- Mensagem de erro -->
+                        <div class="invalid-feedback">
+                            Por favor, digite a sua senha.
+                        </div>
+                    </div>
+
+                    <!-- Botão de login-->
+                    <div class="d-flex justify-content-center">
+                        <a href="dashboard.html"><button type="button" class="btn btn-primary w-100 fw-bold">Entrar</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+
+        <!-- Script do formulário de login -->
+        <script src="js/main.login.js"></script>
+
+</body>
+
+</html>
